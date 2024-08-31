@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+
+.section-m1{
+    margin: 40px 0;
+}
+
+
+body{
+    width: 100%;
+}
+
+
+
+
+/* #header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background-color: #E3E6F3;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   z-index: 999;
+ position: fixed;
+ width: 100%;
+} */
+
+.navbar{
+    position: fixed;
+    background-color: darkslategray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+#navber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+
+#navber li{
+   list-style: none;
+   padding: 0 20px;
+   position: relative;
+}
+
+
+#navber a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600px;
+  color: #1a1a1a;
+   transition: 0.3s ease;
+}
+
+
+
+#navber a:hover,
+#navber a.active{
+   color: #0cb3a7;
+     
+ }
+
+
+
+ #navber a.active::after,
+ #navber a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+      
+  }
+
+.fa-amazon{
+    font-size: 50px;
+    
+}
+
+
+/* =============================================================navber end======================================================= */
+
+
+/* =================================================================#hero start============================================================== */
+
+
+#hero{
+    background-image: url("../img/istockphoto-2103894533-1024x1024.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: dodgerblue;
+    text-shadow: -1px -1px 0 gray;
+}
+
+/* ============================================================#hero end============================================================== */
+
+/* ===========================================================feature start=================================================================== */
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+   width: 200px;
+   text-align: center;
+   padding: 25px 15px;
+   border-radius:4px;
+   margin: 15px 0;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+   background-color: #1c1c50;
+}
+
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #1c1c50;
+ }
+ 
+
+ #feature .fe-box:nth-child(2) h6 {
+    background-color: #1c1c50;
+ }
+ 
+
+ #feature .fe-box:nth-child(2) h6 {
+    background-color: #1c1c50;
+ }
+ 
+
+ #feature .fe-box:nth-child(2) h6 {
+    background-color: #1c1c50;
+ }
+ 
+
+
+ #feature .fe-box:nth-child(5) h6 {
+    background-color: #1c1c50;
+ }
+ 
+/* =================================================#feature rnd=========================================================================== */
+
+/* ================================================ #product1 start==============================================================*/
+
+#product1{
+   text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 20%;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   cursor: pointer;
+   margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#product1 .pro .des span{
+    color: darkslateblue;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: midnightblue;
+    font-size: 14px;
+}
+
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: gold;
+}
+
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700px;
+    color: cornflowerblue;
+}
+
+/* ================================================================== #product1 end========================================================*/
+/* ===================================================================#banner start============================================================ */
+
+#banner{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-image: url("../img/220-SM849199.jpg");
+   background-size: cover;
+   width: 100%;
+   height: 40vh;
+   background-position: center;
+}
+
+
+#banner h4{
+    color: white;
+    font-size: 16px;
+}
+
+
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px  0;
+}
+
+
+#banner h2 span{
+    color: red;
+    
+}
+
+/* =============================================================== #banner  end=======================================================*/
+
+
+#newsletters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1c1c50;
+}
+
+
+
+#newsletters h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+
+#newsletters p{
+    font-size: 14px;
+    font-weight: 400;
+    color: gainsboro;
+}
+
+
+#newsletters input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
